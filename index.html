@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+             <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </head>
+    <body>
+        <div class="login-signup">
+            <h2>Login</h2>
+            <form action="" id="login">
+                <div class="user-box">
+                    <input type="email" name="" id="login-email" autocomplete="off" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" id="login-pwd" autocomplete="off" required style="margin-bottom: 0px;">
+                    <label for="">Password</label>
+                </div>
+                <div class="forgot-pwd">
+                    <h4>Forgot Password?</h4>
+                </div>
+                <div class="btn">
+                    <button id="login-submit" >Submit</button>
+                    <div class="loader"></div>
+                </div>
+                <h4>Create Account ? <span id ='nav-to-signup'>Click here</span></h4>
+            </form>
+        </div>
+        <div class="login-signup">
+            <h2>Signup</h2>
+            <form action="" id="signup">
+                <div class="user-box">
+                    <input type="text" name="" id="signup-username" autocomplete="off" required>
+                    <label for="">Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="email" name="" id="signup-email" autocomplete="off" required>
+                    <label for="">Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" id="signup-pwd" autocomplete="off" required>
+                    <label for="">Password</label>
+                </div>
+                <div class="btn">
+                    <button id="signup-submit">Submit</button>
+                    <div class="loader"></div>
+                </div>
+               <h4>Already have an Account ? <span id="nav-to-login">Click here</span></h4>
+            </form>
+        </div>
+        <div class="user-details" style="display: none;">
+            <h1></h1>
+            <button>Sign Out</button>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-firestore.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="app.js"></script>
+
+</html>
